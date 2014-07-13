@@ -18,6 +18,16 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
 fr:
-  hello: "Bonjour"
+  devise:
+    sessions:
+      user:
+        signed_in: 'Bienvenu utilisateur, vous avez été connecté'
+      admin:
+        signed_in: 'Bonjour administrateur!'
+    mailer:
+      confirmation_instructions:
+        subject: 'Bonsjour tout le monde!'
+        user_subject: "Bonjour utilisateur! S'il vous plait confirmez votre email"
+        reset_password_instructions:
+          subject: 'Remise à zéro des instructions'
