@@ -20,6 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 fr:
   connection: 'Connexion'
+  remember_me: "Se souvenir de moi"
   devise:
     sessions:
       user:
