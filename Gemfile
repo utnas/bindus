@@ -10,18 +10,18 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-#gem 'spring', group: :development
-
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'simple_form'
 
 gem 'node-rails', git: 'https://github.com/cloudspace/node-rails.git'
 gem 'socket.io-rails'
+gem 'juggernaut'
 
 group :development do
+  gem 'spring'
   gem 'better_errors'
-  gem 'binding_of_caller', :platforms => [:mri_20]
+  gem 'binding_of_caller'
   gem 'quiet_assets'
   gem 'rails_layout'
   gem 'capistrano'

@@ -1,5 +1,5 @@
-Bindus
-=========
+Bind Us Together
+================
 
 This application is a .
 
