@@ -11,9 +11,16 @@
 // about supported directives.
 //
 //= require jquery
+//= require socket.io
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap
 //= require_tree .
 
-'use strict';
+( function () {
+    'use strict';
+
+    $(document).ready(function () {
+        set_message_timeout(".alert");
+    });
+});
