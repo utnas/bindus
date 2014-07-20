@@ -15,7 +15,8 @@ gem 'devise'
 gem 'simple_form'
 
 gem 'node-rails', git: 'https://github.com/cloudspace/node-rails.git'
-gem 'socket.io-rails'
+gem 'socket.io-rails', git: 'https://github.com/jhchen/socket.io-rails.git'
+gem 'websocket-rails', git: 'git://github.com/DanKnox/websocket-rails.git'
 gem 'juggernaut'
 
 group :development do
@@ -40,6 +41,7 @@ group :development, :test do
 end
 group :production do
   gem 'unicorn'
+  gem 'rails_12factor'
 end
 group :test do
   gem 'capybara'
