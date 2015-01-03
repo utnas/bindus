@@ -16,6 +16,8 @@ gem 'node-rails', git: 'https://github.com/cloudspace/node-rails.git'
 gem 'socket.io-rails', git: 'https://github.com/jhchen/socket.io-rails.git'
 gem 'websocket-rails', git: 'git://github.com/DanKnox/websocket-rails.git'
 gem 'juggernaut'
+gem 'execjs'
+gem 'node'
 
 group :development do
   gem 'spring'
@@ -31,17 +33,17 @@ group :development do
   gem 'rb-fchange', :require => false
   gem 'rb-fsevent', :require => false
   gem 'rb-inotify', :require => false
+  gem 'sqlite3'
 end
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'thin'
-  gem 'sqlite3'
 end
 group :production do
+  gem 'pg'
   gem 'unicorn'
   gem 'rails_12factor'
-  gem 'pg'
 end
 group :test do
   gem 'capybara'
