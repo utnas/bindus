@@ -7,5 +7,7 @@ class CreateAdminService
       user.password_confirmation = secrets.admin_password
       user.confirm!
     end
+
+    puts 'CREATED ADMIN USER: ' << user.email
   end
 end
