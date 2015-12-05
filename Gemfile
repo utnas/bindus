@@ -1,15 +1,14 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
-gem 'rails', '4.1.4'
+ruby '2.2.3'
+gem 'rails', '~>4.2.0'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'omniauth'
 gem 'simple_form'
 
 gem 'node-rails', git: 'https://github.com/cloudspace/node-rails.git'
@@ -34,11 +33,11 @@ group :development do
   gem 'rb-fsevent', :require => false
   gem 'rb-inotify', :require => false
   gem 'sqlite3'
+  gem 'puma'
 end
 group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
-  gem 'thin'
 end
 group :production do
   gem 'pg'

@@ -143,7 +143,7 @@ Devise.setup do |config|
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
   # to give user feedback and not to assert the e-mail validity.
-  # config.email_regexp = /\A[^@]+@[^@]+\z/
+  config.email_regexp = /\A[^@]+@[^@]+\z/
 
   # ==> Configuration for :timeoutable
   # The time you want to timeout the user session without activity. After this
@@ -151,13 +151,13 @@ Devise.setup do |config|
   config.timeout_in = 5.minutes
 
   # If true, expires auth token on session timeout.
-  config.expire_auth_token_on_timeout = true
+  #config.expire_auth_token_on_timeout = true
 
   # ==> Configuration for :lockable
   # Defines which strategy will be used to lock an account.
   # :failed_attempts = Locks an account after a number of failed attempts to sign in.
   # :none            = No lock strategy. You should handle locking by yourself.
-  # config.lock_strategy = :failed_attempts
+  config.lock_strategy = :failed_attempts
 
   # Defines which key will be used when locking and unlocking an account
   # config.unlock_keys = [ :email ]
